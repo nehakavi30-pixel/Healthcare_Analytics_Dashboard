@@ -1,4 +1,4 @@
-# 🏥 Healthcare Analytics Dashboard  
+#  Healthcare Analytics Dashboard  
 ### SQL + Power BI | End-to-End Data Analysis Project
 
 ---
@@ -12,7 +12,7 @@ The work covers the full analyst pipeline — from raw SQL queries to a structur
 
 ---
 
-##  Database Structure
+## Database Structure
 
 The `Health` database consists of **5 core tables:**
 
@@ -62,17 +62,17 @@ The `Health` database consists of **5 core tables:**
 
 ---
 
-##  Files in This Repository
+## Files in This Repository
 
 ```
-📦 healthcare-analytics
- ┣ 📄 health_sql.sql       → All KPI queries + views (fully commented)
- ┗ 📊 Health_DB.pbix       → Power BI dashboard connected to the Health DB
+ healthcare-analytics
+ ┣  health_sql.sql       → All KPI queries + views (fully commented)
+ ┗  Health_DB.pbix       → Power BI dashboard connected to the Health DB
 ```
 
 ---
 
-## How to Run This Project
+##  How to Run This Project
 
 **SQL Setup:**
 1. Open **SQL Server Management Studio (SSMS)**
@@ -88,12 +88,14 @@ The `Health` database consists of **5 core tables:**
 
 ---
 
-##  Key Insights (Sample Findings)
+##  Key Insights (From Dashboard)
 
-- Some doctors show **no-show rates above 20%**, flagging potential scheduling or patient engagement issues
-- **Pending/Failed payments** were found across multiple treatment types, indicating billing follow-up gaps
-- Doctors with **20+ years experience** don't uniformly generate the highest revenue — specialization matters more
-- Monthly revenue shows **clear seasonal dips**, useful for resource planning
+-  **Total hospital revenue stands at ₹551.25K**, with an **Average Patient Lifetime Value of ₹57.26K** — indicating a relatively high-spend, repeat-visit patient base
+-  **Chemotherapy is the most performed treatment (49 cases)**, followed by X-Ray (41), ECG (38), and MRI & Physiotherapy tied at 36 — suggesting oncology and diagnostic services drive operational load
+-  **Revenue leakage is significant across all treatment types** — Chemotherapy alone has 20 Pending + 16 Failed payments; MRI and ECG show similar patterns, pointing to a systemic billing follow-up gap
+-  **Central branch leads in appointments per doctor (~21)** vs Westside (~18) and Eastside (~20.67), suggesting uneven resource distribution across branches
+-  **Doctor experience vs cost shows a non-linear trend** — revenue peaks at certain mid-to-high experience levels (D002, D006) rather than climbing steadily, meaning seniority alone doesn't predict revenue contribution
+-  **One specialization dominates revenue at ~46.91% (₹1.29M)**, with the second at 35.13% (₹0.97M) — over 80% of revenue is concentrated in just two specializations, creating dependency risk
 
 ---
 
@@ -106,5 +108,4 @@ Built as part of a self-driven analytics portfolio to demonstrate:
 
 ---
 
-> Feel free to open an issue or reach out if you'd like to discuss the analysis or methodology.# Healthcare_Analytics_Dashboard
-SQL + Power BI | End-to-End Data Analysis Project
+> 📬 Feel free to open an issue or reach out if you'd like to discuss the analysis or methodology.
